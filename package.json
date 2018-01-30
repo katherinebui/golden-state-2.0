@@ -1,14 +1,15 @@
 {
   "name": "golden-state",
   "version": "1.0.0",
-  "description": "",
+  "description": "A copy of Are-We-Playing with server-side rendering",
   "main": "index.js",
   "scripts": {
     "build:server": "babel ./app/server -d build/server",
     "build:watch:server": "babel ./app/server -d build/server --watch",
     "build:client": "webpack --config ./webpack.config.js/",
     "build:watch:client": "webpack --config ./webpack.config.js/ --watch",
-    "start:dev": "parallelshell 'npm run build:watch:server' 'npm run build:watch:client' 'nodemon ./build/server/index.js'",
+    "start:dev":
+      "parallelshell 'npm run build:watch:server' 'npm run build:watch:client' 'nodemon ./build/server/index.js'",
     "start:dev:client": "webpack-dev-server"
   },
   "author": "Katherine Bui",
