@@ -9,7 +9,7 @@ class Fireworks extends React.Component {
       if (this.props.schedule.date.length == 0) {
         return <h1 className="no">NO!</h1>;
       } else {
-        // sendSMS();
+        sendSMS();
         return (
           <div>
             <p className="details">

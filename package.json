@@ -1,7 +1,7 @@
 {
   "name": "golden-state-2.0",
   "version": "1.0.0",
-  "description": "A copy of Are-We-Playing with server-side rendering",
+  "description": "A copy of Are-We-Playing with server-side rendering with Express",
   "main": "index.js",
   "scripts": {
     "build:server": "babel ./app/server -d build/server",
