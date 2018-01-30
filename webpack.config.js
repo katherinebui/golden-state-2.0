@@ -1,6 +1,7 @@
-var path = require('path');
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   devtool: 'inline-source-map',
@@ -8,6 +9,9 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'build'),
     filename: 'bundle.js'
+  },
+  resolve: {
+    extensions: ['.js', '.scss', '.css']
   },
   module: {
     loaders: [
@@ -19,10 +23,15 @@ module.exports = {
         query: {
           presets: ['es2015', 'react']
         }
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
       }
     ]
   },
   plugins: [
+    new Dotenv(),
     new HtmlWebpackPlugin({
       template: './app/public/index.html',
       filename: 'index.html',

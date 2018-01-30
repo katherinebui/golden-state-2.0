@@ -2,8 +2,8 @@ import React from 'react';
 import { render } from 'react-dom';
 import Header from './Header';
 import firebase from '../firebase';
-// import styles from '../public/scss/styles.scss';
-// import fireworks from '../public/scss/fireworks.scss';
+import styles from '../public/css/styles.css';
+// import fireworks from '../public/css/fireworks.css';
 import Fireworks from './Fireworks';
 
 class App extends React.Component {
