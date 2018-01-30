@@ -6,8 +6,8 @@ To see the project in action:
 ```
 npm run start:dev
 ```
-and listen for ``` localhost:8080```
+and listen at ``` localhost:8080```
 
 Tech stack: React, Node js, Firebase, Twilio, AWS Lambda function, AWS API Gateway and HTML/CSS.
 
-![Image of Application](/sample.png)
+![Image of Application](./app/public/images/sample.png)
