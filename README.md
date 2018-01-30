@@ -8,6 +8,6 @@ npm run start:dev
 ```
 and listen at ``` localhost:8080```
 
-Tech stack: React, Node js, Firebase, Twilio, AWS Lambda function, AWS API Gateway and HTML/CSS.
+Tech stack: React js, Express, Firebase, Twilio, AWS Lambda function, AWS API Gateway and HTML/CSS.
 
 ![Image of Application](./app/public/images/sample.png)
