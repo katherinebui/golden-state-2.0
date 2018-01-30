@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import Header from './Header';
 import firebase from '../firebase';
 import styles from '../public/css/styles.css';
-// import fireworks from '../public/css/fireworks.css';
+import fireworks from '../public/css/fireworks.css';
 import Fireworks from './Fireworks';
 
 class App extends React.Component {
@@ -53,7 +53,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         <Header />
         <Fireworks schedule={this.state.schedule} />
       </div>
